@@ -6,7 +6,8 @@ const reserved2 = "reserve";
 
 function isEqualIgnoreDiacritic(str1, str2) {
     // Second Parameter: Locale; undefined: Use the locale of the current computer
-    // Third Parameter: case: We care about case-sensitivity
+    // Third Parameter: sensitivity: "case"; We care about case-sensitivity
+    //                  numeric: true; Handle numbers in string for sorting
     return str1.localeCompare(str2, undefined, {sensitivity: "case"}) === 0;
 }
 
