@@ -28,3 +28,8 @@ for (let match of matches) {
     console.log(`Found value "${match[0]}" at index: ${match.index}.
                  The search string was: ${match.input}`);     
 }
+
+console.log("Repalce / Repalce All: ...");
+console.log(text.replace(digits, "#"));
+console.log(text.replace(digitsGlobal, "#"));
+
